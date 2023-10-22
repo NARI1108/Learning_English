@@ -15,7 +15,7 @@
         Custom List view tutorial.
     </li>
     <li>
-         Creating a splash screen and making the program full screen.
+         Getting to know Cardview and using it in the program.
     </li>
     <li>
          Creating a multilingual program.
