@@ -21,7 +21,7 @@
          Add the ability to pronounce English texts to the program.
     </li>
     <li>
-         Creating a Scroll view in the program
+        Familiarity with ToggleButtons and its use in the program.
     </li>
   <li>
          Creating the Assets folder and changing the font of the texts
