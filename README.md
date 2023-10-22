@@ -12,7 +12,7 @@
           <code><strong>The purpose of making this application is to familiarize with the following:</strong></code>
 <ul>
     <li>
-         Creating option menu.
+        Custom List view tutorial.
     </li>
     <li>
          Creating a splash screen and making the program full screen.
