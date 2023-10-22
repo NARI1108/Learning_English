@@ -24,7 +24,7 @@
         Familiarity with ToggleButtons and its use in the program.
     </li>
   <li>
-         Creating the Assets folder and changing the font of the texts
+        Using Intents to send SMS.
   </li>
 </ul>
 
