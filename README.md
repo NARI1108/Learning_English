@@ -18,7 +18,7 @@
          Getting to know Cardview and using it in the program.
     </li>
     <li>
-         Creating a multilingual program.
+         Add the ability to pronounce English texts to the program.
     </li>
     <li>
          Creating a Scroll view in the program
