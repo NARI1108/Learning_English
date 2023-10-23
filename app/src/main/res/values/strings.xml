@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Learning_English</string>
-    <string name="list">فهرست</string>
-    <string name="about_us">درباره ما</string>
-    <string name="exit">خروجی</string>
+    <string name="app_name">آمـوزش زبان</string>
+    <string name="list">فـهرست</string>
+    <string name="about_us">دربـاره ما</string>
+    <string name="contact_us">تـماس با ما</string>
+    <string name="exit">خـروجی</string>
 </resources>
