@@ -53,4 +53,27 @@ public class MainActivity extends AppCompatActivity {
                 exit_Dialog();
         }
     }
+    //    This method actually determines whether the person can exit or not.
+    @Override
+    public void onBackPressed(){
+        exit_Dialog();
+    }
+    void exit_Dialog(){
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setMessage(getResources().getString(R.string.message_exit));
+        alert.setCancelable(false);
+        alert.setPositiveButton("بله", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+        alert.setNegativeButton("نه", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+        alert.create().show();
+    }
 }
