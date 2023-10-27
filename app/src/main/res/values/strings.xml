@@ -4,4 +4,9 @@
     <string name="about_us">دربـاره ما</string>
     <string name="contact_us">تـماس با ما</string>
     <string name="exit">خـروجی</string>
+    <string name="message_exit">آیا شما می خواهید خارج شوید؟</string>
+    <string name="contact_us_text">برای ارتباط مستقیم با پشتیبانی میتوانید با زدن دکمه ارسال پیامک پیغام خودتونو برای ما ارسال کنید</string>
+    <string name="conversations">Conversations</string>
+    <string name="name">Name</string>
+    <string name="message">Message</string>
 </resources>
