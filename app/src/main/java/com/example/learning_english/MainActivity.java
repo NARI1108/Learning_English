@@ -76,4 +76,26 @@ public class MainActivity extends AppCompatActivity {
         });
         alert.create().show();
     }
+    public void contactUs(){
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+        alert.setCancelable(false);
+        alert.setMessage(getResources().getString(R.string.contact_us_text));
+        alert.setPositiveButton("ارسـال پیامـک ", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Intent intent_sms = new Intent(Intent.ACTION_VIEW);
+                intent_sms.setData(Uri.parse("sms:+140455324"));
+                intent_sms.putExtra("sms_boby","این یک متن تستی برای ارسال پیامکه");
+                startActivity(intent_sms);
+            }
+        });
+        alert.setNegativeButton("نمی خواهم", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+        alert.create().show();
+    }
 }
