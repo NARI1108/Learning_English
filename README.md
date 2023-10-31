@@ -5,7 +5,10 @@
   ## ✨Learning English Vidoe
 
   ## <code><strong>About App</strong></code> ##
-  
+  <p>
+   We made an English language learning app. that you can strengthen your language. 
+   This program has a simple graphic design and the purpose of creating such a project was to learn about the chapters in the text below.
+  </p>
 </h3>
 ## <img align="left" alt="GIF" height="50px" src="https://www.toptimenet.com/images/setting.gif"/>  
   <ul>
