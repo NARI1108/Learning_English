@@ -10,6 +10,7 @@ public class list extends AppCompatActivity {
     ListView list_View;
 //    Creating a dynamic presentation to store the necessary variables for list view items.
     ArrayList<Model> arrayList = new ArrayList<>();
+    AdapterListView adapter ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,8 @@ public class list extends AppCompatActivity {
         arrayList.add(new Model(R.drawable.smart,"SmartWatch","ساعت هوشمند"));
         arrayList.add(new Model(R.drawable.losing,"losing Weight","کم کردن وزن"));
         arrayList.add(new Model(R.drawable.getajob,"get a go","برو سرکار"));
+//      Setting the adapter and connecting it to the list view.
+        adapter = new AdapterListView(arrayList,list.this);
+        list_View.setAdapter(adapter);
     }
-
 }
