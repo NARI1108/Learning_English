@@ -1,7 +1,9 @@
  <h3 align="center">
   Welcome to my Readme!
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
-
+  
+  <img src="https://www.schoolvoice.com/blog/wp-content/uploads/2017/11/Eng.png" width="250">
+  
   ## ✨Learning English Vidoe
 
   ## <code><strong>About App</strong></code> ##
