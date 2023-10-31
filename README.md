@@ -10,7 +10,7 @@
    This program has a simple graphic design and the purpose of creating such a project was to learn about the chapters in the text below.
   </p>
 </h3>
-## <img align="left" alt="GIF" height="50px" src="https://www.toptimenet.com/images/setting.gif"/>  
+ <img align="left" alt="GIF" height="50px" src="https://www.toptimenet.com/images/setting.gif"/>  
   <ul>
         
        Applicable on all Android operating systems  
