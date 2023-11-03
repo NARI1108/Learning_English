@@ -9,4 +9,206 @@
     <string name="conversations">Conversations</string>
     <string name="name">Name</string>
     <string name="message">Message</string>
+    <string name="lessons">درس ها</string>
+    <string name="pronunciation">Pronunciation</string>
+    <string name="Translate">translate</string>
+    <string name="english">English</string>
+    <string name="con1_E">"Lucy: Is that a new bag?
+
+Carol: Yes. I got it yesterday.
+
+Lucy: It’s beautiful. Do you like it?
+
+Carol: It’s pretty, but it hurts my shoulder.
+
+Lucy: That’s not good. What are you going to do?
+
+Carol: I think I’m going to return it.
+
+"</string>
+
+    <string name="con1_F">"لوسی: این کیف جدیده؟
+
+کارول: آره، دیروز خریدم.
+
+لوسی: قشنگه. دوسش داری؟
+
+کارول: قشنگه اما شونمو اذیت می کنه.
+
+لوسی: این که خوب نیست. می خوای چکار کنی؟
+
+کارول: فکر کنم پسش بدم.
+
+"</string>
+
+    <string name="con2_E">"Mike: I don’t know what to get Ann for our anniversary.
+
+James: What about jewelry?
+
+Mike: She doesn’t like my taste in jewelry.
+
+James: How about clothes?
+
+Mike: She doesn’t like my taste in clothes.
+
+James: Have you asked her what she wants?
+
+Mike: No. I want it to be a surprise.
+
+James: How can you surprise her if she doesn’t like your taste in anything?
+
+Mike: That’s why I need your help.
+
+James: I can’t help you. Sheila doesn’t like my taste either.
+"</string>
+
+    <string name="con2_F">"مایک: نمی دونم واسه سالگردمون برای آنا چی بخرم.
+
+جیمز: جواهر چطوره؟
+
+مایک: سلیقمو توی جواهر نمی پسنده.
+
+جیمز: لباس چطور؟
+
+مایک: سلیقمو توی لباس نمی پسنده.
+
+جیمز: ازش پرسیدی چی می خواد؟
+
+مایک: نه. می خوام سورپرایز باشه.
+
+جیمز: چه جوری می خوای سورپرایزش کنی وقتی سلیقتو توی هیچی قبول نداره؟
+
+مایک: واسه همین به کمکت نیاز دارم.
+
+جیمز: نمی تونم کمکت کنم. شیلا هم سلیقه منو قبول نداره.
+"</string>
+
+    <string name="con3_E">"Rachael: Today is my mom’s birthday.
+
+Monica: What are you going to get her?
+
+Rachael: Flowers and a card.
+
+Monica: What about that new handbag she wants?
+
+Rachael: It’s too expensive.
+
+Monica: I can loan you some money.
+
+"</string>
+
+    <string name="con3_F">"
+        ریچل: امروز تولد مامانمه.
+
+مونیکا: چی می خوای بهش بدی؟
+
+ریچل: گل و یک کارت.
+
+مونیکا: پس اون کیفی که می خواست چی؟
+
+ریچل: خیلی گرونه.
+
+مونیکا: می تونم بهت پول قرض بدم.
+"</string>
+
+    <string name="con4_E">"Helen: Hi, Martha. You look great!
+
+Martha: Thanks. I lost 30 pounds.
+
+Helen: Wow! How did you lose weight?
+
+Martha: I don’t eat any junk food and I work out every day.
+
+Helen: I need to lose some weight too.
+
+Martha: Do you want to go to the gym with me?
+
+Helen: When are you going?
+
+Martha: I go every morning at 5 AM.
+
+Helen: That’s too early for me.
+
+Martha: Once you get started, you’ll really enjoy it.
+
+"</string>
+
+    <string name="con4_F">"
+       هلن: سلام مارتا. عالی به نظر می یای.
+
+مارتا: ممنون. 30 پوند کم کردم.
+
+هلن: واو! چه جوری وزن کم کردی؟
+
+مارتا: هله هوله دیگه نمی خورم و هر روز ورزش می کنم.
+
+هلن: منم باید یک کم وزن کم کنم.
+
+مارتا: می خوای با من بیای بریم باشگاه؟
+
+هلن: کی می ری؟
+
+مارتا: هر روز صبح ساعت 5
+
+هلن: خیلی زوده برای من
+
+مارتا: وقتی شروع کنی، واقعا ازش لذت می بری.
+
+"</string>
+
+    <string name="con5_E">"Jeff: Can I borrow some money, Steven?
+
+Steven: Again? You already borrowed money from me last week.
+
+Jeff: I’m sorry. I just need to pay some bills.
+
+Steven: That is what you said last time.
+
+Jeff: I promise to pay you back soon.
+
+Steven: OK. You need to find a job.
+
+"</string>
+
+    <string name="con5_F">"
+       جف: یک کم پول به من قرض میدی، استیون؟
+
+استیون: دوباره؟ هفته پیش هم از من پول قرض گرفتی.
+
+جف: متاسفم. باید چند تا قبض رو پرداخت کنم.
+
+استیون: دفعه آخر هم همینو گفتی.
+
+جف: قول می دم زود پست بدم.
+
+استیون: اوکی. باید یه کار پیدا کنی.
+
+"</string>
+
+    <string name="con6_E">"Jonathan: I’m thinking about getting a smartwatch.
+
+Sam: Do you know how to use one?
+
+Jonathan: No, but I can learn.
+
+Sam: You don’t even know how to use your smartphone.
+
+Jonathan: My son has a smartwatch. It looks cool.
+
+Sam: Maybe you should learn how to use your phone first.
+"</string>
+
+    <string name="con6_F">"
+جاناتان: دارم فکر می کنم یه ساعت هوشمند بگیرم.
+
+سام: بلدی ازش استفاده کنی؟
+
+جاناتان: نه اما یاد می گیرم.
+
+سام: تو حتی بلد نیستی از گوشی هوشمندت استفاده کنی.
+
+جاناتان: پسرم یک ساعت هوشمند داره. باحال به نظر می رسه.
+
+سام: شاید بهتر باشه اول کار با گوشیت رو یاد بگیری.
+"</string>
 </resources>
