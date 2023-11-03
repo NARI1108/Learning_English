@@ -44,8 +44,8 @@ public class Lessons extends AppCompatActivity {
         conversation_Fa_list [3] = getResources().getString(R.string.con4_F);
         conversation_Fa_list [4] = getResources().getString(R.string.con5_F);
         conversation_Fa_list [5] = getResources().getString(R.string.con6_F);
-
-        
+//      Setting the text and title of each conversation based on the position we took.
+        txt_title.setText(title_list[position]);
     }
     public void putExtra(){
 //        Getting the position of each item through the Internet to identify which item was clicked.
