@@ -7,7 +7,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class Lessons extends AppCompatActivity {
-    
+    int position;
     String [] title_list ={"A New Bag","Hard to Shop For","Birthday Present","Losing Weight","Get a Job","Smartwatch"};
     String [] conversation_En_list = new String[6];
     String [] conversation_Fa_list = new String[6];
@@ -20,6 +20,7 @@ public class Lessons extends AppCompatActivity {
         setContentView(R.layout.activity_lessons);
         findViews();
         initializationOfArrays();
+        putExtra();
     }
     public void findViews(){
         txt_title = findViewById(R.id.txt_title);
@@ -43,5 +44,11 @@ public class Lessons extends AppCompatActivity {
         conversation_Fa_list [3] = getResources().getString(R.string.con4_F);
         conversation_Fa_list [4] = getResources().getString(R.string.con5_F);
         conversation_Fa_list [5] = getResources().getString(R.string.con6_F);
+
+        
+    }
+    public void putExtra(){
+//        Getting the position of each item through the Internet to identify which item was clicked.
+        position = getIntent().getIntExtra("pos",0);
     }
 }

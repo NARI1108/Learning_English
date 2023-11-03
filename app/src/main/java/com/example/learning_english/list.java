@@ -1,7 +1,10 @@
 package com.example.learning_english;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -32,5 +35,15 @@ public class list extends AppCompatActivity {
 //      Setting the adapter and connecting it to the list view.
         adapter = new AdapterListView(arrayList,list.this);
         list_View.setAdapter(adapter);
+//        Defining the click event for listview items.
+        list_View.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            By clicking on each item, it will be transferred to the next activity along with the position of each item to identify which conversation was clicked.
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Intent intent = new Intent(list.this,Lessons.class);
+                intent.putExtra("pos",position);
+                startActivity(intent);
+            }
+        });
     }
 }
