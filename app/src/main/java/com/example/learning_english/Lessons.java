@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -29,6 +30,7 @@ public class Lessons extends AppCompatActivity {
         findViews();
         putExtra();
         initializationOfArrays();
+        translate();
     }
     public void findViews(){
         txt_title = findViewById(R.id.txt_title);
@@ -59,6 +61,29 @@ public class Lessons extends AppCompatActivity {
 //      Setting the text and title of each conversation based on the position we took.
         txt_title.setText(title_list[position]);
         txt_conversation_En.setText(conversation_En_list[position]);
+    }
+    public void translate(){
+//        Button click method that has two different modes to display Farsi and English text.
+        btn_translate.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    txt_conversation_En.setText(conversation_Fa_list[position]);
+                    txt_conversation_En.setTextColor(Color.GREEN);
+                }else{
+                    String text = "<pre><strong>Lucy</strong>: Is that a new bag?<br /><br /><span style=\"color: #993366;\"><strong>Carol</strong>: Yes. I got it yesterday.</span><br /><br /><strong>Lucy</strong>: It’s beautiful. Do you like it?<br /><br /><span style=\"color: #993366;\"><strong>Carol</strong>: It’s pretty, but it hurts my shoulder.</span><br /><br /><strong>Lucy</strong>: That’s not good. What are you going to do?<br /><br /><span style=\"color: #993366;\"><strong>Carol</strong>: I think I’m going to return it.</span></pre>";
+                    if(position == 0){
+                        txt_conversation_En.setText(Html.fromHtml(text));
+                    }else{
+//                        We made a bet to display the text in html form for the first conversation and normally for the next items.
+                        txt_conversation_En.setText(conversation_En_list[position]);
+                        txt_conversation_En.setTextColor(getResources().getColor(R.color.black));
+                    }
+                    txt_conversation_En.setText(conversation_En_list[position]);
+                    txt_conversation_En.setTextColor(getResources().getColor(R.color.black));
+                }
+            }
+        });
     }
 //    By exiting the activity, the pronunciation process stops.
     @Override
