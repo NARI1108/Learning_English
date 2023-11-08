@@ -31,6 +31,7 @@ public class Lessons extends AppCompatActivity {
         putExtra();
         initializationOfArrays();
         translate();
+        textToSpeech();
     }
     public void findViews(){
         txt_title = findViewById(R.id.txt_title);
@@ -82,6 +83,39 @@ public class Lessons extends AppCompatActivity {
                     txt_conversation_En.setText(conversation_En_list[position]);
                     txt_conversation_En.setTextColor(getResources().getColor(R.color.black));
                 }
+            }
+        });
+    }
+    public void textToSpeech(){
+//        Initialization of the object we created from the textToSpeech class.
+        textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+//                The first condition checks whether the user's device has speech capability or not.
+                if(i == TextToSpeech.SUCCESS){
+//                    Determining the language we want to pronounce.
+                    int result = textToSpeech.setLanguage(Locale.US);
+//                    The second condition checks whether their language can be supported or not. Either it has their data or not.
+                    if(result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
+                        Toast.makeText(getApplicationContext(),"دستگاه شما این زبان را پشتیبانی نمی کند!", Toast.LENGTH_SHORT).show();
+//                        If the device does not have the ability to pronounce, the background of the pronunciation button will be dark so that the user understands that the device does not have the ability to pronounce.
+                        btn_speak.setEnabled(false);
+                        btn_speak.setBackgroundResource(R.drawable.button_style_disable);
+                    }
+                }else{
+                    Toast.makeText(getApplicationContext(), "دستگاه شما این قابلیت را ندارد!", Toast.LENGTH_SHORT).show();
+//                    If the device does not have the ability to pronounce, the background of the pronunciation button will be dark so that the user understands that the device does not have the ability to pronounce.
+                    btn_speak.setEnabled(false);
+                    btn_speak.setBackgroundResource(R.drawable.button_style_disable);
+                }
+            }
+        });
+//        The method of clicking on the pronunciation button.
+        btn_speak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Using this method, any line code inside this text view is pronounced.
+                textToSpeech.speak(conversation_En_list[position],textToSpeech.QUEUE_FLUSH,null);
             }
         });
     }
